@@ -1,4 +1,5 @@
 import unittest
+from app import User
 
 
 class UserTestCase(unittest.TestCase):
@@ -19,7 +20,7 @@ class CommentsTestCase(unittest.TestCase):
     def tearDown(self):
         del self.comment
 
-    def test_create_comment(self):
+    def test_create_comments(self):
         self.assertTrue(self.comment.create_comment(), "Comment successfully created")
 
 
